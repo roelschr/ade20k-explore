@@ -140,5 +140,7 @@ cython_debug/
 # VSCode
 .vscode/
 
+# pycharm
+.idea/
 
 data/

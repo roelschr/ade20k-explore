@@ -4,7 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 
 text_files = []
-for currpath, folders, files in os.walk("ADE20K_2016_07_26/images/training"):
+for currpath, folders, files in os.walk("data/ADE20K_2016_07_26/images/training"):
     for file in files:
         if file.endswith("_atr.txt"):
             text_files.append(os.path.join(currpath, file))
@@ -41,4 +41,4 @@ instances = pd.DataFrame(
         "attr_list"
     ]
 )
-instances.to_csv("parsed_training.csv", index=False)
+instances.to_csv("data/parsed_training.csv", index=False)

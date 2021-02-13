@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "ade20k-explore"
+version = "0.1.0"
+description = "Parsing and exploring the ADE20K Dataset"
+authors = ["Igor Hoelscher <igor.hoelscher@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.2.2"
+numpy = "^1.20.1"
+scipy = "^1.6.0"
+imageio = "^2.9.0"
+Pillow = "^8.1.0"
+tqdm = "^4.56.2"
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
